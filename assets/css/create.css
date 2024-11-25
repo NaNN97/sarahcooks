@@ -1,0 +1,71 @@
+/* Global Variables */
+:root {
+  --background: #F4F1DE;
+  --highlight1: #E07A5F;
+  --highlight2: #81B29A;
+  --secondary: #F2CC8F;
+  --font-primary: #3D405B;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background);
+  color: var(--font-primary);
+}
+
+h1 {
+  text-align: center;
+  color: var(--highlight1);
+}
+
+.form-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid var(--highlight2);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--highlight2);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--highlight1);
+}

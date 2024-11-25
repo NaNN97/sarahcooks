@@ -1,0 +1,144 @@
+/* Global Variables */
+:root {
+  --background: #F4F1DE;
+  --highlight1: #E07A5F;
+  --highlight2: #81B29A;
+  --secondary: #F2CC8F;
+  --font-primary: #3D405B;
+  --font-secondary: #3D405B;
+  --dark-mode-background: #3D405B;
+  --dark-mode-font: #F4F1DE;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background);
+  color: var(--font-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2 {
+  color: var(--highlight1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-primary);
+}
+
+a:hover {
+  color: var(--highlight2);
+}
+
+button {
+  background-color: var(--highlight2);
+  color: var(--background);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--highlight1);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--highlight2);
+  color: var(--background);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar li {
+  font-size: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background-color: var(--secondary);
+  color: var(--font-primary);
+}
+
+/* Recipes Section */
+.recipes {
+  padding: 20px;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.recipe-card {
+  background-color: var(--background);
+  border: 1px solid var(--highlight2);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-placeholder {
+  background-color: var(--highlight1);
+  color: var(--background);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.image-placeholder img {
+  height: 150px;
+}
+
+.recipe-images {
+  height: 250px;
+  border-radius: 5px;
+}
+
+.recipe-images img {
+  height: 250px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--highlight1);
+  color: var(--background);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
